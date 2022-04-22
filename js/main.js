@@ -26,11 +26,11 @@ function gestionar_otro_click(){
 function gestionar_click_3(){
     let copyText = document.getElementById('texto-encriptado');
 
-    copyText.Select();
+    copyText.select();
     copyText.setSelectionRange(0, 99999);
 
     navigator.clipboard.writeText(copyText.value);    
-    console.log("estas aqui")
+    console.log("estas copiando el texto!!!")
 }
 
 function desencriptar(algun_texto){
