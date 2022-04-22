@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let texto_del_usuario = "gato";
+
+        console.log( encriptar(texto_del_usuario) )
+
+
+        function encriptar_letra( letra ){
+            switch (letra) {
+                case "e":
+                    return "enter";
+                    break;
+                case "i":
+                    return "imes";
+                    break;
+                case "a":
+                    return "ai";
+                    break;
+                case "o":
+                    return "ober";
+                    break;
+                case "u":
+                    return "ufat";
+                    break;
+            
+                default:
+                    return letra;
+                    break;
+            }
+        }
+
+        function encriptar(texto){
+            return texto.split("").map( letra => encriptar_letra(letra) ).join("");
+        }
+
+        
+    </script>
+</body>
+</html>
