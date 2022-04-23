@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alura Escriptar Mensajes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="content">
-      <section class="section-flex contenedor">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alura Escriptar Mensajes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="content">
+            <section class="section-flex contenedor">
 
-        <header class="first">
-          <img class="section-img-logo" src="./img/Logo-2.png" alt="logo-2" />
-        </header>
+                <header class="first">
+                    <img class="section-img-logo" src="./img/Logo-2.png" alt="logo-2" />
+                </header>
         
-        <textarea  class="section-texto" name="ingrese su texto aqui" id="texto-usuario" cols="30" rows="10"></textarea>
+                <textarea  class="section-texto" name="ingrese su texto aqui" id="texto-usuario" cols="30" rows="10"></textarea>
         
-        <div class="section-btn-flex">
-          <button class="btn-1" type="submit" onclick="gestionar_click()">encriptar</button>
-          <button class="btn-2" type="submit" onclick="gestionar_otro_click()">desencriptar</button>
-        </div>
+                <div class="section-btn-flex">
+                <button class="btn-1" type="submit" onclick="gestionar_click()">encriptar</button>
+                <button class="btn-2" type="submit" onclick="gestionar_otro_click()">desencriptar</button>
+                </div>
 
-      </section>
-      <section class="flex-sidebar">
-        <div id="caja-normal" class="section-sidebar ">       
+            </section>
+            <section class="flex-sidebar">
+                <div id="caja-normal" class="section-sidebar ">       
             
-            <h1>Ningun mensaje fue encontrado</h1>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
-        </div>
-        <div id="caja-encriptada" class="section-sidebar-2 oculto ">          
-          <textarea class="caja-encriptada1" id="texto-encriptado"></textarea>
+                    <h1>Ningun mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div id="caja-encriptada" class="section-sidebar-2 oculto ">          
+                    <textarea class="caja-encriptada1" id="texto-encriptado"></textarea>
 
-          <button class="btn-3" type="button" onclick="gestionar_click_3()"> Copiar </button>
-        </div>
+                    <button class="btn-3" type="button" onclick="gestionar_click_3()"> Copiar </button>
+                </div>
         
-      </section>      
-    </header>
+            </section>      
+        </div>
 
-    <script src="./js/main.js"></script>
-  </body>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
